@@ -1,0 +1,17 @@
+{
+  "name": "Corporate-1",
+  "version": "1.0.0",
+  "authors": [
+    "itakurakoichi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "main": [],
+  "dependencies": {
+    "jquery": "jQuery#~2.1.4"
+  }
+}
