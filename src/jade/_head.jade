@@ -1,0 +1,24 @@
+head
+	meta(charset='utf-8')
+	meta(name='viewport',content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no')
+	meta(name='keywords',content='')
+	meta(name='description',content='')
+	meta(property='og:site_siteName',content='')
+	meta(property='og:title',content='#{_siteName}')
+	meta(property='og:description',content='#{_description}')
+	meta(property='og:image',content='')
+	title #{_siteName}
+
+	//[if lt IE 9]
+	script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+	//- script(src='js/css3-mediaqueries.js')
+	meta(property='og:url',content='#{_url}')
+	//[endif]
+
+	link(rel='shortcut icon', href='')
+	//- link(rel='stylesheet',href='css/normalize.css')
+	//- link(rel='stylesheet',href='css/base.css')
+	link(rel='stylesheet',href='./css/base.css')
+
+	// blocked head
+	block head

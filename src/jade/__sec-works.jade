@@ -1,0 +1,35 @@
+section#works.sec-2.sec-works
+	h1.sec-works__title WORKS
+
+	nav.sec-works__nav
+		ul
+			li
+				a(href="#") All
+			li
+				a(href="#") Cat1
+			li
+				a(href="#") Cat2
+
+	.contents.sec-works__contents
+		for val, index in [1]
+			article.works-article
+				.sec-about__img
+					//- img(src="img/works" + val + ".jpg", alt="", width="200")
+					img(src="http://placehold.it/320x180/2070aa/ffffff", alt="", width="")
+				h1.works-article__head WORKSタイトル#{val}
+				ul.works-article__tip
+					li
+						a(href="#") 2000/00/00
+					li
+						a(href="#") Cat
+				.body.works-article__body
+					.works-article__description
+						p テキストテキストテキストテキストテキストテキストテキストテキストテキスト（optional）
+					.works-article__data
+						table
+							for val, index in [1,2,3,4]
+								tr
+									td.num No.#{val}
+									td.name 詳細#{val}
+									td.hoge 要素
+									td.hoge 要素

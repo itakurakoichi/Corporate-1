@@ -1,0 +1,5 @@
+ul.menu
+	for e, i in siteContents
+		li(class='menu-#{e} menu-' + (i+1))
+			a(href='##{e}')= e.toUpperCase()
+
