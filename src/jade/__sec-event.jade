@@ -1,0 +1,32 @@
+section#event.sec-2.sec-event
+	h1.sec-event__title EVENT
+
+	nav.sec-event__nav
+		ul
+			li
+				a(href="#") All
+			li
+				a(href="#") Cat1
+			li
+				a(href="#") Cat2
+
+	.contents.sec-event__contents
+		for val, index in [1]
+			article.event-article
+				h1.event-article__head EVENTタイトル#{val}
+				ul.event-article__tip
+					li
+						a(href="#") 2000/00/00
+					li
+						a(href="#") Cat
+				.body.event-article__body
+					.event-article__description
+						p テキストテキストテキストテキストテキストテキストテキストテキストテキスト（optional）
+					.event-article__data
+						table
+							tr
+								td 項目
+								td テキストテキストテキストテキストテキスト
+							tr
+								td 項目
+								td テキストテキストテキストテキストテキスト

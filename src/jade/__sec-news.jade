@@ -1,0 +1,26 @@
+section#news.sec-1.sec-news
+	h1.sec-news__title NEWS
+
+	nav.sec-news__nav
+		ul
+			li
+				a(href="#") All
+			li
+				a(href="#") Cat1
+			li
+				a(href="#") Cat2
+
+	.contents.sec-news__contents
+		for val, index in [1,2,3,4]
+			article.news-article
+				.news-article__img
+				//- img(src="img/news" + (index+1) + ".jpg", alt="", width="")
+				img(src="http://placehold.it/180x180/2070aa/ffffff", alt="", width="")
+				h1.news-article__head NEWSタイトル#{val}
+				ul.news-article__tip
+					li
+						a(href="#") 2000/00/00
+					li
+						a(href="#") Cat
+				.body.news-article__body
+					p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
