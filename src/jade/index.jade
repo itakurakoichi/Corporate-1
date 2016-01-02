@@ -1,0 +1,14 @@
+extends _layout
+
+block head
+	meta(property='blocked-meta', content='')
+	link(rel='blocked-link', href='')
+
+block content
+	include __sec-news
+	include __sec-event
+	include __sec-works
+	include __sec-about
+
+block script
+	//- blocked script

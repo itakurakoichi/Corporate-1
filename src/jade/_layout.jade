@@ -1,0 +1,21 @@
+include _data
+
+doctype html
+html(lang='ja')
+	// common head
+	include _head
+	body
+		.wrapper
+			// common header
+			include _header
+			// common gnav
+			include _gnav
+			// blocked content
+			block content
+				p initial content
+			// common footer
+			include _footer
+		// common script
+		include _script
+		// blocked script
+		block script
