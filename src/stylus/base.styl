@@ -1,0 +1,59 @@
+@charset "utf-8"
+
+/**
+ * base style
+ */
+
+// TODO: read initial style files, below is temporary.
+* 
+	margin 0
+	padding 0
+
+img
+	vertical-align bottom
+
+a
+	text-decoration none
+
+h1
+	font-size 1.8rem
+
+h2
+	font-size 1.4em
+
+/**
+ * base style
+ */
+
+.container
+	padding 10px
+
+section
+	>h1
+		padding 2px 8px
+		margin-bottom 10px
+		font-size 1.4rem
+		background #2070aa
+		color #fff
+	[class*="__nav"]
+		ul
+			margin 0
+			li
+				display inline-block
+
+article
+	padding 14px
+	background #f4f4f4
+	+ article
+		margin-top 14px
+
+	h1
+		margin-bottom 10px
+		font-size 1.4rem
+
+.text
+	margin-top 10px
+	font-size 1.0rem
+	line-height 1.4
+	&:first-child
+		margin 0
