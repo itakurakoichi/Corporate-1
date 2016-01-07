@@ -12,6 +12,7 @@
   ],
   "main": [],
   "dependencies": {
+    "bootstrap": "~3.3.6",
     "jquery": "jQuery#~2.1.4"
   }
 }
