@@ -42,7 +42,12 @@ gulp.task('html', function() {
 			pretty: true
 		}))
 		.pipe(gulp.dest(paths.src))
+		// base
 		.pipe(replace('base.js', 'base.min.js'))
+		.pipe(replace('base.css', 'base.min.css'))
+		// lib
+		.pipe(replace('bootstrap.js', 'bootstrap.min.js'))
+		.pipe(replace('bootstrap.css', 'bootstrap.min.css'))
 		.pipe(replace('jquery.js', 'jquery.min.js'))
 		.pipe(gulp.dest(paths.dist))
 });
@@ -88,13 +93,23 @@ gulp.task('css', function() {
 		.pipe(stylus())
 		.pipe(gulp.dest(paths.src + '/css'))
 		.pipe(minifycss())
+		.pipe(rename({
+			suffix: ".min"
+		}))
 		.pipe(gulp.dest(paths.dist + '/css'));
+});
+
+// just only copy library files
+gulp.task('lib', function() {
+	gulp.src(paths.src + '/lib/**')
+		.pipe(gulp.dest(paths.dist + '/lib'));
 });
 
 gulp.task('watch', function() {
 	gulp.watch(paths.src + '/**/*.jade', ['html']);
 	gulp.watch(paths.src + '/js/*.js', ['js']);
 	gulp.watch(paths.src + '/stylus/*.styl', ['css']);
+	gulp.watch(paths.src + '/lib/**', ['lib']);
 });
 
 gulp.task('webserver', function() {
@@ -102,4 +117,4 @@ gulp.task('webserver', function() {
 		.pipe(webserver({ livereload: true }));
 });
 
-gulp.task('default', ['html', 'css', 'js', 'img', 'watch', 'webserver']);
+gulp.task('default', ['html', 'css', 'js', 'img', 'lib', 'watch', 'webserver']);
