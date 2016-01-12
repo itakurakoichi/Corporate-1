@@ -1,18 +1,15 @@
 {
   "name": "Corporate-1",
   "version": "1.0.0",
-  "authors": [
-    "itakurakoichi"
-  ],
-  "license": "MIT",
+  "main": [],
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components"
   ],
-  "main": [],
   "dependencies": {
     "bootstrap": "~3.3.6",
-    "jquery": "jQuery#~2.1.4"
+    "jquery": "jQuery#~2.1.4",
+    "foundation": "~5.5.3"
   }
 }
