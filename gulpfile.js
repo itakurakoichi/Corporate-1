@@ -75,17 +75,17 @@ gulp.task('js', function() {
 		.pipe(gulp.dest(paths.dist + '/js'));
 });
 
-gulp.task('bowerJs', function() {
-	var jsFilter = filter('**/*.js');
-	gulp.src(mainBowerFiles())
-		.pipe(jsFilter)
-		.pipe(gulp.dest(paths.src + '/js'))
-		.pipe(uglify())
-		.pipe(rename({
-			suffix: ".min"
-		}))
-		.pipe(gulp.dest(paths.dist + '/js'));
-});
+// gulp.task('bowerJs', function() {
+// 	var jsFilter = filter('**/*.js');
+// 	gulp.src(mainBowerFiles())
+// 		.pipe(jsFilter)
+// 		.pipe(gulp.dest(paths.src + '/js'))
+// 		.pipe(uglify())
+// 		.pipe(rename({
+// 			suffix: ".min"
+// 		}))
+// 		.pipe(gulp.dest(paths.dist + '/js'));
+// });
 
 gulp.task('css', function() {
 	gulp.src(paths.src + '/stylus/*.styl')
