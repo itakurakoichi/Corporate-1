@@ -1,0 +1,331 @@
+	<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Styleguide of Foundation</title>
+<link rel="stylesheet" href="lib/css/normalize.css" />
+<link rel="stylesheet" href="lib/css/foundation.css" />
+<script src="js/modernizr.js"></script>
+<style>
+</style>
+</head>
+<body>
+
+<div class="fixed">
+<!-- <div class="fixed contain-to-grid sticky"> -->
+<!-- <div class="contain-to-grid sticky"> -->
+<!-- <div class="sticky"> -->
+	
+	<nav class="top-bar" data-topbar role="navi">
+	<!-- <nav class="top-bar" data-topbar role="navi" data-options="is_hover: false"> -->
+	<!-- <nav class="top-bar" data-topbar role="navi" data-options="sticky_on: small"> -->
+		<ul class="title-area">
+			<li class="name">
+				<h1><a href="#">Styleguide of Foundation</a></h1>
+			</li>
+			<li class="toggle-topbar menu-icon">
+				<a href="#"><span></span></a>
+			</li>
+		</ul>
+
+		<section class="top-bar-section">
+			<ul class="right">
+				<li>
+					<a href="#">News</a>
+				</li>
+				<li class="has-dropdown active">
+					<a href="#">Works</a>
+					<ul class="dropdown">
+						<li><a href="#">2015</a></li>
+						<li><a href="#">2014</a></li>
+						<li><a href="#">2013</a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown">
+					<a href="#">Blog</a>
+					<ul class="dropdown">
+						<li><a href="#">menu</a></li>
+						<li><a href="#">menu</a></li>
+						<li class="active"><a href="#">menu</a></li>
+						<li><a href="#">menu</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="left">
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</section>
+	</nav>
+</div>
+
+<!-- Grid Layout -->
+<!-- ブレイクポイント: 641px, 1025px -> 640x以下, 641px以上〜1024px以下, 1025px以上 -->
+<div class="container">
+	<h2>Grid Layout</h2>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="panel">
+				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-8 medium-6 columns">
+			<div class="callout panel">
+				<p>columns: large-8 medium-6</p>
+				<div class="row">
+					<div class="large-6 columns"><div class="panel">child</div></div>
+					<div class="large-6 columns"><div class="panel">child</div></div>
+				</div>
+			</div>
+		</div>
+		<div class="large-4 medium-6 columns">
+			<div class="callout panel">
+				<p>columns: large-4 medium-6</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-4 medium-4 small-4 columns">
+			<div class="callout panel">
+				<p>columns: 4</p>
+			</div>
+		</div>
+		<div class="large-4 medium-4 small-4 columns">
+			<div class="callout panel">
+				<p>columns: 4</p>
+			</div>
+		</div>
+		<div class="large-4 medium-4 small-4 columns">
+			<div class="callout panel">
+				<p>columns: 4</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr />
+
+<div class="container" style="margin: 0 20px;">
+	<h2>Button</h2>
+
+	<h3>Sizes</h3>
+	<a href="#" class="button tiny">Tiny</a>
+	<a href="#" class="button small">Small</a>
+	<a href="#" class="button">Default</a>
+	<a href="#" class="button large">Large</a>
+	<a href="#" class="button expand">Expand</a>
+
+	<hr />
+
+	<h3>Shapes</h3>
+	<a href="#" class="button radius">Radius</a>
+	<a href="#" class="button round">Round</a>
+
+	<hr />
+
+	<h3>Each Type</h3>
+	<a href="#" class="button info">Info</a>
+	<a href="#" class="button success">Success</a>
+	<a href="#" class="button secondary">Secondary</a>
+	<a href="#" class="button alert">Alert</a>
+	<a href="#" class="button disabled">Disabled</a>
+
+	<hr />
+
+	<h3>Group</h3>
+	<ul class="button-group">
+		<li><a href="#" class="button">Btn</a></li>
+		<li><a href="#" class="button">Btn</a></li>
+		<li><a href="#" class="button">Btn</a></li>
+	</ul>
+	<ul class="button-group round">
+		<li><a href="#" class="button">Btn</a></li>
+		<li><a href="#" class="button">Btn</a></li>
+		<li><a href="#" class="button">Btn</a></li>
+	</ul>
+
+	<hr />
+
+	<h3>ButtonGroup Even</h3>
+	<ul class="button-group even-3 radius">
+		<li><a href="#" class="button">Btn</a></li>
+		<li><a href="#" class="button">Btn</a></li>
+		<li><a href="#" class="button">Btn</a></li>
+	</ul>
+
+	<hr />
+
+	<h3>ButtonGroup Stack</h3>
+	<ul class="button-group stack-for-small even-3">
+		<li><a href="#" class="button">Btn</a></li>
+		<li><a href="#" class="button">Btn</a></li>
+		<li><a href="#" class="button">Btn</a></li>
+	</ul>
+
+	<hr />
+
+	<h3>Button Bar</h3>
+	<div class="button-bar">
+		<ul class="button-group">
+			<li><a href="#" class="button">Btn</a></li>
+			<li><a href="#" class="button">Btn</a></li>
+		</ul>
+		<ul class="button-group">
+			<li><a href="#" class="button">Btn</a></li>
+			<li><a href="#" class="button">Btn</a></li>
+			<li><a href="#" class="button">Btn</a></li>
+		</ul>
+	</div>
+</div>
+
+
+<hr />
+
+<div class="container" style="margin: 0 20px;">
+	<h2>Image</h2>
+	<img src="img/1.jpg" class="th" width="240" alt="" />
+</div>
+
+
+<hr />
+
+<div class="container" style="margin: 0 20px;">
+	<h2>Form</h2>
+
+	<div>
+		<label>Input Label</label>
+		<input type="text" placeholder="input here" />
+	</div>
+
+	<div class="row collapse">
+		<label>Input Label</label>
+		<div class="small-9 columns">
+			<input type="text" placeholder="input here" />
+		</div>
+		<div class="small-3 columns">
+			<span class="postfix">.com</span>
+		</div>
+	</div>
+</div>
+
+<hr />
+
+<div class="container" style="margin: 0 20px;">
+	<h2>Select</h2>
+	<label>Select Box</label>
+	<select>
+		<option value="apple">Apple</option>
+		<option value="banana">Banana</option>
+		<option value="grape">Grape</option>
+	</select>
+
+	<label>Radio Button</label>
+	<input type="radio" name="hoge" value="Red"><label>Radio 1</label>
+	<input type="radio" name="hoge" value="Blue"><label>Radio 2</label>
+
+	<label>Checkbox</label>
+	<input type="checkbox"><label>Checkbox 1</label>
+	<input type="checkbox"><label>Checkbox 2</label>
+
+	<label>Textarea</label>
+	<textarea placeholder="input here"></textarea>
+</div>
+
+<hr />
+
+<div class="container" style="margin: 0 20px;">
+	<h2>Headline</h2>
+	<h1>見出し <small>サブテキスト</small></h1>
+	<h2>見出し <small>サブテキスト</small></h2>
+	<h3>見出し <small>サブテキスト</small></h3>
+	<h4>見出し <small>サブテキスト</small></h4>
+	<h5>見出し <small>サブテキスト</small></h5>
+	<h6>見出し <small>サブテキスト</small></h6>
+</div>
+
+<hr />
+
+<div class="container" style="margin: 0 20px;">
+	<h2>Table</h2>
+	<table>
+		<thead>
+			<tr>
+				<th width="100">Item</th>
+				<th width="200">Item</th>
+				<th width="150">Item</th>
+				<th width="150">Item</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>text text text</td><td>text text text</td><td>text text text</td><td>text text text</td></tr>
+			<tr><td>text text text</td><td>text text text</td><td>text text text</td><td>text text text</td></tr>
+			<tr><td>text text text</td><td>text text text</td><td>text text text</td><td>text text text</td></tr>
+			<tr><td>text text text</td><td>text text text</td><td>text text text</td><td>text text text</td></tr>
+		</tbody>
+	</table>
+</div>
+
+<hr />
+
+<div class="container" style="margin: 0 20px;">
+	<h2>Pricing Table</h2>
+	<div class="row">
+		<div class="medium-6 columns">
+			<ul class="pricing-table">
+				<li class="title">title</li>
+				<li class="price">¥1,000</li>
+				<li class="description">description</li>
+				<li class="bullet-item">item</li>
+				<li class="bullet-item">item</li>
+				<li class="cta-button"><a class="button" href="#">Btn</a></li>
+			</ul>
+		</div>
+		<div class="medium-6 columns">
+			<ul class="pricing-table">
+				<li class="title">title</li>
+				<li class="price">¥1,000</li>
+				<li class="description">description</li>
+				<li class="bullet-item">item</li>
+				<li class="bullet-item">item</li>
+				<li class="cta-button"><a class="button" href="#">Btn</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<hr />
+
+<div class="container" style="margin: 0 20px;">
+	<h2>Form</h2>
+	
+</div>
+
+<hr />
+
+<div class="container" style="margin: 0 20px;">
+	<h2>Form</h2>
+	
+</div>
+
+<hr />
+
+<div class="container" style="margin: 0 20px;">
+	<h2>Form</h2>
+	
+</div>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
+</body>
+</html>
