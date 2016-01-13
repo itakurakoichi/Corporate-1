@@ -1,22 +1,26 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Styleguide of Foundation</title>
-<link rel="stylesheet" href="lib/css/normalize.css" />
-<link rel="stylesheet" href="lib/css/foundation.css" />
-<script src="lib/js/modernizr.js"></script>
-<style>
-</style>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Styleguide of Foundation</title>
+	<link rel="stylesheet" href="lib/css/normalize.css" />
+	<link rel="stylesheet" href="lib/css/foundation.css" />
+	<script src="lib/js/modernizr.js"></script>
+	<style>
+		ul, ol {
+			list-style: none;
+		}
+	</style>
 </head>
 <body>
 
-<div class="fixed">
+<!-- <h2>Toggle Menu</h2> -->
 <!-- <div class="fixed contain-to-grid sticky"> -->
 <!-- <div class="contain-to-grid sticky"> -->
 <!-- <div class="sticky"> -->
-	
+<!-- <div class="fixed"> -->
+<div class="">
 	<nav class="top-bar" data-topbar role="navi">
 	<!-- <nav class="top-bar" data-topbar role="navi" data-options="is_hover: false"> -->
 	<!-- <nav class="top-bar" data-topbar role="navi" data-options="sticky_on: small"> -->
@@ -60,6 +64,119 @@
 	</nav>
 </div>
 
+<h2>Off Canvas Menu</h2>
+<div class="off-canvas-wrap" data-offcanvas>
+<div class="inner-wrap">
+	<nav class="tab-bar">
+		<section class="left-small">
+			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+		</section>
+		<!-- Position: left|middle|right -->
+		<section class="middle tab-bar-section">
+			<h1 class="title">Styleguide of Foundation</h1>
+		</section>
+	</nav>
+
+	<!-- slide direction: right|left -->
+	<aside class="left-off-canvas-menu">
+		<ul class="off-canvas-list">
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li class="has-submenu"><a href="#">menu3</a>
+				<ul class="left-submenu">
+					<li class="back"><a href="#">back</a></li>
+					<li><a href="#">menu3-1</a></li>
+					<li><a href="#">menu3-2</a></li>
+				</ul>
+			</li>
+			<li><a href="#">menu4</a></li>
+		</ul>
+	</aside>
+
+<div class="container" style="margin: 0 20px;">
+	<h2>Breadcrumbs</h2>
+	<ul class="breadcrumbs">
+		<li class="current"><a href="#">current</a></li>
+		<li><a href="#">default</a></li>
+		<li class="unavailable"><a href="#">unavailable</a></li>
+		<li>has no a tag</li>
+	</ul>
+</div>
+
+<hr />
+
+<h2>Navigation</h2>
+
+<h3>Magellan</h3>
+<div data-magellan-expedition="fixed">
+	<dl class="sub-nav">
+	<dd data-magellan-arrival="first"><a href="#first">First</a></dd>
+	<dd data-magellan-arrival="second"><a href="#second">Second</a></dd>
+	</dl>
+</div>
+
+<div class="container" style="margin: 0 20px;"> 
+	<h4 data-magellan-destination="first">First</h4>
+	<a name="first"></a>
+	<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+	 
+	<h4 data-magellan-destination="second">Second</h4>
+	<a name="second"></a>
+	<p>あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわゐゑをんアイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヰヱヲ</p>
+</div>
+
+<hr />
+
+<div class="container" style="margin: 0 20px;">
+	<h3>Tab</h3>
+	<!-- direction: vertical (default horizontal) -->
+	<ul class="tabs" data-tab>
+		<li class="tab-title active"><a href="#panel1">Tab1</a></li>
+		<li class="tab-title"><a href="#panel2">Tab2</a></li>
+		<li class="tab-title"><a href="#panel3">Tab3</a></li>
+		<li class="tab-title"><a href="#panel4">Tab3</a></li>
+	</ul>
+	<div class="tabs-content">
+		<div class="content active" id="panel1">
+			<p>panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1</p>
+		</div>
+		<div class="content" id="panel2">
+			<p>panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2</p>
+		</div>
+		<div class="content" id="panel3">
+			<p>panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3</p>
+		</div>
+		<div class="content" id="panel4">
+			<p>panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4</p>
+		</div>
+	</div>
+
+	<hr />
+
+	<h3>Side Nav</h3>
+	<ul class="side-nav">
+		<li class="active"><a href="#">Link1</a></li>
+		<li><a href="#">Link2</a></li>
+		<!-- <li class="divider"></li> -->
+		<li><a href="#">Link3</a></li>
+		<li><a href="#">Link4</a></li>
+	</ul>
+
+	<hr />
+
+	<h3>Sub Nav</h3>
+	<dl class="sub-nav">
+		<dt>Filter:</dt>
+		<dd class="active"><a href="#">Link1</a></dd>
+		<dd><a href="#">Link2</a></dd>
+		<dd><a href="#">Link3</a></dd>
+		<dd><a href="#">Link4</a></dd>
+		<dd class="hide-for-small-only"><a href="#">Suspended</a></dd>
+	</dl>
+</div>
+
+<hr />
+
 <!-- Grid Layout -->
 <!-- ブレイクポイント: 641px, 1025px -> 640x以下, 641px以上〜1024px以下, 1025px以上 -->
 <div class="container">
@@ -67,8 +184,8 @@
 
 	<div class="row">
 		<div class="large-12 columns">
-			<div class="panel">
-				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+			<div class="panel radius">
+				<p>panel radius テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 			</div>
 		</div>
 	</div>
@@ -84,8 +201,11 @@
 			</div>
 		</div>
 		<div class="large-4 medium-6 columns">
-			<div class="callout panel">
-				<p>columns: large-4 medium-6</p>
+			<div class="callout panel radius">
+				<p>
+					columns: large-4 medium-6,<br />
+					panel: callout, radius
+				</p>
 			</div>
 		</div>
 	</div>
@@ -184,14 +304,12 @@
 	</div>
 </div>
 
-
 <hr />
 
 <div class="container" style="margin: 0 20px;">
 	<h2>Image</h2>
 	<img src="img/1.jpg" class="th" width="240" alt="" />
 </div>
-
 
 <hr />
 
@@ -302,25 +420,89 @@
 <hr />
 
 <div class="container" style="margin: 0 20px;">
-	<h2>Form</h2>
-	
+	<!-- see more options -> http://foundation.zurb.com/sites/docs/v/5.5.3/components/orbit.html -->
+	<h2>Slideshow</h2>
+	<ul data-orbit data-options="animation:fade; timer_speed:1500; slide_number:true; bullets:true; active_slide_class:foo; bullets_active_class:fuga; slide_number_class: orbit-slide-number;">
+		<li>
+			<img src="img/1.jpg" alt="slide1" />
+			<div class="orbit-caption">Caption1</div>
+		</li>
+		<li>
+			<img src="img/2.jpg" alt="slide2" />
+			<div class="orbit-caption">Caption2</div>
+		</li>
+		<li>
+			<img src="img/3.jpg" alt="slide3" />
+			<div class="orbit-caption">Caption3</div>
+		</li>
+		<li>
+			<img src="img/4.jpg" alt="slide4" />
+			<div class="orbit-caption">Caption4</div>
+		</li>
+	</ul>
+
+	<h3>NonImage</h3>
+	<ul data-orbit>
+		<li style="background:#fca;">
+			<div style="padding: 25px 40px">
+				<h4>Headline1</h4>
+				<p>description</p>
+			</div>
+			<div class="orbit-caption">here is caption1. here is caption1. here is caption1.</div>
+		</li>
+		<li style="background:#caf; padding:25px 40px;">
+			<h4>Headline2</h4>
+			<p>descriptiondescription</p>
+		</li>
+		<li style="background:#afc; padding:25px 40px;">
+			<h4>Headline3</h4>
+			<p>description</p>
+		</li>
+	</ul>
+
+	<h3>HasButton</h3>
+	<div class="my--orbit-buttons">
+		<a data-orbit-link="headline1" class="small button radius">1</a>
+		<a data-orbit-link="headline2" class="small button radius">2</a>
+		<a data-orbit-link="headline3" class="small button radius">3</a>
+	</div>
+	<ul data-orbit>
+		<li data-orbit-slide="headline1" style="background:#fca; padding:25px 40px;">
+			<h4>Headline1</h4>
+			<p>description</p>
+		</li>
+		<li data-orbit-slide="headline2" style="background:#caf; padding:25px 40px;">
+			<h4>Headline2</h4>
+			<p>descriptiondescription</p>
+		</li>
+		<li data-orbit-slide="headline3" style="background:#afc; padding:25px 40px;">
+			<h4>Headline3</h4>
+			<p>description</p>
+		</li>
+	</ul>
 </div>
 
 <hr />
 
 <div class="container" style="margin: 0 20px;">
-	<h2>Form</h2>
-	
+	<h2>Modal Window</h2>
+	<div>
+		<a href="#" data-reveal-id="modal-1" class="button small">Excute Modal</a>
+		<!-- can set size: tiny|small|medium|large|xlarge|full -->
+		<div id="modal-1" class="reveal-modal full" data-reveal>
+			<h3>Modal Title</h3>
+			<p class="lead">Lead Text</p>
+			<p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+	</div>
+
 </div>
 
-<hr />
-
-<div class="container" style="margin: 0 20px;">
-	<h2>Form</h2>
-	
-</div>
-
-
+<!-- /end contens -->
+<a class="exit-off-canvas"></a> 
+</div><!-- /inner-wrap -->
+</div><!-- /off-canvas-wrap -->
 
 <script src="lib/js/jquery.js"></script>
 <script src="lib/js/foundation.min.js"></script>
