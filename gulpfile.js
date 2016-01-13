@@ -27,7 +27,7 @@ var imagemin = require('gulp-imagemin');
 var paths = {
 	src: 'src',
 	dist: 'dist'
-}
+};
 
 // Tasks
 gulp.task('html', function() {
@@ -49,7 +49,7 @@ gulp.task('html', function() {
 		.pipe(replace('bootstrap.js', 'bootstrap.min.js'))
 		.pipe(replace('bootstrap.css', 'bootstrap.min.css'))
 		.pipe(replace('jquery.js', 'jquery.min.js'))
-		.pipe(gulp.dest(paths.dist))
+		.pipe(gulp.dest(paths.dist));
 });
 
 gulp.task('img', function() {
@@ -114,7 +114,11 @@ gulp.task('watch', function() {
 
 gulp.task('webserver', function() {
 	gulp.src(paths.src)
-		.pipe(webserver({ livereload: true }));
+		.pipe(webserver({
+			host: 'localhost',
+			port: 9000,
+			livereload: true
+		}));
 });
 
 gulp.task('default', ['html', 'css', 'js', 'img', 'lib', 'watch', 'webserver']);
