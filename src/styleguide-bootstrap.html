@@ -18,15 +18,14 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<meta property="og:url" content="http://mysite.com">
 	<!--[endif]-->
-
 	<link rel="shortcut icon" href="">
-	<link rel="stylesheet" href="./lib/css/bootstrap.css">
-	<link rel="stylesheet" href="./css/base.css">
-
+	<link rel="stylesheet" href="lib/css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="lib/css/bootstrap-offcanvas.css">
 	<!-- blocked head-->
 	<meta property="blocked-meta" content="">
 	<link rel="blocked-link" href="">
-
+	<!-- style-->
 	<style>
 		.gheader {
 			background: #acf;
@@ -54,7 +53,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="">SiteTitle</a>
+		<a class="navbar-brand" href="">Styleguide of Bootstrap</a>
 	</div>
 
 	<div class="collapse navbar-collapse target">
@@ -70,7 +69,68 @@
 	</div>
 </nav>
 
-<h1 style="width: 96%; margin: 80px auto 0;">Styleguide of Bootstrap</h1>
+<div class="container">
+	<h2>Off Canvas</h2>
+	<div class="row row-offcanvas row-offcanvas-right">
+		<div class="col-xs-12 col-sm-9">
+			<p class="pull-right visible-xs">
+				<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Nav</button>
+			</p>
+			<div class="jumbotron">
+				<h3 style="margin-top:0;">Off Canvas</h3>
+				<p style="font-size: 1.2rem;">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				<p style="font-size: 1.2rem;">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+			<div class="list-group">
+				<a href="#" class="list-group-item">Link</a>
+				<a href="#" class="list-group-item active">Link</a>
+				<a href="#" class="list-group-item">Link</a>
+				<a href="#" class="list-group-item">Link</a>
+				<a href="#" class="list-group-item">Link</a>
+				<a href="#" class="list-group-item">Link</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<h2>Off Canvas</h2>
+	<div class="row row-offcanvas row-offcanvas-right">
+		<nav class="navbar navbar-default">
+			<p class="pull-right visible-xs" style="margin-bottom:0;">
+				<button type="button" class="navbar-toggle btn btn-primary btn-xs" data-toggle="offcanvas">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</p>
+			<div class="navbar-header">
+				<a class="navbar-brand" href="">Styleguide of Bootstrap</a>
+			</div>
+		</nav>
+
+		<div class="col-xs-12 col-sm-9">
+			<p style="font-size: 1.2rem;">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+			<p style="font-size: 1.2rem;">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+		</div>
+
+		<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+			<div class="list-group">
+				<a href="#" class="list-group-item">Link</a>
+				<a href="#" class="list-group-item active">Link</a>
+				<a href="#" class="list-group-item">Link</a>
+				<a href="#" class="list-group-item">Link</a>
+				<a href="#" class="list-group-item">Link</a>
+				<a href="#" class="list-group-item">Link</a>
+			</div>
+		</div>
+	</div><!--/row-->
+</div>
+
+<hr />
 
 <div class="container">
 	<h2>Breadcrumb</h2>
@@ -84,6 +144,20 @@
 </div>
 
 <div class="container">
+	<h2>Tab</h2>
+	<ul class="nav nav-tabs" style="margin-bottom: 15px;">
+		<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+		<li><a href="#about" data-toggle="tab">About</a></li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane active" id="home">
+			<p>ホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホーム</p>
+		</div>
+		<div class="tab-pane" id="about">
+			<p>アバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウト</p>
+		</div>
+	</div>
+
 	<h2>Alert</h2>
 	<div class="alert alert-info">
 		<button class="close" data-dismiss="alert">&times;</button>
@@ -99,23 +173,8 @@
 			<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 		</div>
 	</div>
-
-	<h2>Panel</h2>
-	<ul class="nav nav-tabs" style="margin-bottom: 15px;">
-		<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-		<li><a href="#about" data-toggle="tab">About</a></li>
-	</ul>
-	<div class="tab-content">
-		<div class="tab-pane active" id="home">
-			<p>ホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホームホーム</p>
-		</div>
-		<div class="tab-pane" id="about">
-			<p>アバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウトアバウト</p>
-		</div>
-	</div>
 </div>
 
-<hr />
 
 <div class="container">
 	<h2>Pagination</h2>
@@ -134,11 +193,9 @@
 	</ul>
 </div>
 
-<hr />
 
 <div class="container">
 	<h2>Button</h2>
-
 	<button class="btn btn-primary">Button</button>
 	<button class="btn btn-success">Button</button>
 	<button class="btn btn-warning">Button</button>
@@ -212,7 +269,6 @@
 	</button>
 </div>
 
-<hr />
 
 <div class="container">
 	<h2>Modal</h2>
@@ -237,7 +293,6 @@
 	</div>
 </div>
 
-<hr />
 
 <div class="container">
 	<h2>Carousel</h2>
@@ -415,6 +470,7 @@
 
 <script src="lib/js/jquery.js"></script>
 <script src="lib/js/bootstrap.js"></script>
+<script src="lib/js/bootstrap-offcanvas.js"></script>
 <script>
 $(function() {
 	"use strict";
